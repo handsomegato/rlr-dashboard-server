@@ -1,0 +1,19 @@
+# From the directory that contains rlr-dashboard-server/ and rlr-dashboard-react/
+
+# 1) Push the server
+( cd rlr-dashboard-server \
+  && git init \
+  && git add . \
+  && git commit -m "Initial server commit: auth, AI proxy, ROI endpoints" \
+  && git branch -M main \
+  && git remote add origin https://github.com/handsomegato/rlr-dashboard-server.git \
+  && git push -u origin main )
+
+# 2) Push the React app
+( cd rlr-dashboard-react \
+  && git init \
+  && git add . \
+  && git commit -m "Initial react app commit: dashboard, ROI tab, AI chat integration" \
+  && git branch -M main \
+  && git remote add origin https://github.com/handsomegato/rlr-dashboard-react.git \
+  && git push -u origin main )
